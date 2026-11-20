@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+  min-height:100vh;
+background:linear-gradient(to left,blue,pink);
+position: relative;
+
+}
+
+ul{
+    width:90%;
+    display:flex;
+    list-style: none;
+justify-content:space-evenly;
+background:rgba(240, 248, 255, 0.453);
+    height:2.5rem;
+    backdrop-filter:blur(4rem);
+    font-weight:600;
+    margin:auto;
+    border-radius:0.9rem;
+    box-shadow:40px 40px 40px rgb(51, 39, 39);
+    padding:0.5em;
+}
+
+
+
+ul li a{
+    text-decoration: none;
+    color:black;
+    position: relative;
+    padding:0.5rem;
+}
+
+ul li a::after{
+    content: "";
+    position:absolute;
+    width:0;
+    height:2px;
+    bottom:0;
+    left:0;
+    background:linear-gradient(to left,pink,blue);
+    
+}
+
+ul li a.active::after{
+    width:100%;
+}
+
+
+
